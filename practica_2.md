@@ -14,10 +14,7 @@ Una topografía mixta está formada por partes de agua y partes de tierra (4
 partes en total). Éstas a su vez podrían descomponerse en 4 más y así
 consecutivamente.
 
-<!-- ![Figura 1: Distintas topografías](img/p2/topografias.png) -->
-![Figura 1: Distintas topografías](http://cl.ly/image/3t3d3W3e1Q3Z/topografias.png)
-
-
+![Figura 1: Distintas topografías](img/p2/topografias.png)
 
 Como puede verse en los ejemplos, hay una relación muy estrecha entre la
 proporción de agua o tierra de una topografía mixta y la proporción de agua o
