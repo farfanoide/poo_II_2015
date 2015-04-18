@@ -41,3 +41,7 @@ implementada mediante test cases.
 > Nota: sólo se descomponen topografías para conseguir combinaciones. No es
 > correcto construir una topografía compuesta por cuatro topografías del mismo
 > tipo.
+
+> Solucion:
+  [Paquete Ejercicio 3](src/p2/PooP2E3.st)
+
