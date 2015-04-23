@@ -44,6 +44,7 @@ implementada mediante test cases.
 
 > Solucion:
   [Paquete Ejercicio 3](src/p2/PooP2E3.st)
+  
 > Solucion Fran:
   [Paquete Ejercicio 3](src/p2 francisco/P2E3.st)
 
