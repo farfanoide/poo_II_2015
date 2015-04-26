@@ -22,16 +22,18 @@ para ser publicado.
 Dada la popularidad de Twitter ahora ud. desea que su cliente también permita publicar en dicha red social. Lamen-
 tablemente se encuentra con 2 problemas:
 
-  *Los tweets son strings de a lo sumo 140 caracteres.
+  - Los tweets son strings de a lo sumo 140 caracteres.
 
-  *La clase Twitter no entiende el mensaje #post: sino #publish:. También recibe como parámetro un String.
+  - La clase Twitter no entiende el mensaje #post: sino #publish:. También recibe como parámetro un String.
 
 Además, como su software funciona correctamente ud. desea introducir el menor número posible de modificaciones.
 A la vez, la clase Twitter pertence a una libría de terceros y no debería modificarla.
 Tareas:
 
   -1. Diseñe la aplicación original.
+  
   -2. Discuta con el ayudante la inclusión del soporte a Twitter
+  
   -3. Explique cómo el patrón resuelve los problemas planteados.
 
 Ejercicio 3: Topografía
