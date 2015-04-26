@@ -91,8 +91,11 @@ inclusión. De cada archivo se conoce el nombre, fecha de creación y tamaño en
 nombre, fecha de creación y contenido (el tamaño es siempre 32kb). Modele el file system y provea la funcionalidad
 para consultar de un directorio:
 
+```sh
 Código 1: Interfaz a implementar
+```
 
+```sh
 1 #tamanoTotalOcupado
 
 2 "Retorna el espacio total ocupado en KB, incluyendo su contenido."
@@ -122,6 +125,7 @@ Código 1: Interfaz a implementar
 14
 
 15 #archivoMasGrande
+```
 
 Tareas:
 
@@ -139,9 +143,9 @@ Veremos que es sencillo modelar formulas aplicando los conocimientos de patrones
 reglas modele e implemente las fórmulas
 
   - Las constantes son términos.
-  - 
+  
   - Las variables son términos.
-  - 
+  
   - Una función cuyos parámetros sean términos es un término.
   
 A partir de una fórmula es necesario saber la cantidad de términos atómicos (constantes o variables).
