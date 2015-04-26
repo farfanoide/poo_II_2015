@@ -82,4 +82,67 @@ implementada mediante test cases.
   
 > Solucion Fran:
   [Paquete Ejercicio 3](src/p2 francisco/P2E3.st)
+  
+  Ejercicio 4: Modele comportamineto de un FileSystem
+-----------------------
 
+Un file system contiene un conjunto de directorios y archivos organizados jerárquicamente mediante una relación de
+inclusión. De cada archivo se conoce el nombre, fecha de creación y tamaño en bytes. De un directorio se conoce el
+nombre, fecha de creación y contenido (el tamaño es siempre 32kb). Modele el file system y provea la funcionalidad
+para consultar de un directorio:
+
+Código 1: Interfaz a implementar
+
+1 #tamanoTotalOcupado
+
+2 "Retorna el espacio total ocupado en KB, incluyendo su contenido."
+
+3
+
+4 #listadoDeContenido
+
+5 "Imprime en el Transcript el listado del contenido del directorio siguiendo el
+
+6 modelo
+
+7 presentado a continuacion:
+
+8 - Directorio A
+
+9 --- Directorio A.1
+
+10 ------ Directorio A.1.1   3 archivos
+
+11 ------ Directorio A.1.2   2 archivos
+
+12 --- Directorio A.2
+
+13 - Directorio B "
+
+14
+
+15 #archivoMasGrande
+
+Tareas:
+
+  - Diseñe y represente un modelo UML de clases de su aplicacion, identifique el patrón de diseño empleado (utilice estereotipos UML para indicar los roles de cada una de las clases en ese patrón).
+  
+  - Implemente completamente en Smalltalk.
+  
+  - Diseñe, implemente y ejecute test cases para verificar el funcionamiento de su aplicación.
+
+
+Ejercicio 5: Fórmulas con objetos
+-----------------------
+
+Veremos que es sencillo modelar formulas aplicando los conocimientos de patrones. Considerando las siguientes
+reglas modele e implemente las fórmulas
+
+  - Las constantes son términos.
+  - 
+  - Las variables son términos.
+  - 
+  - Una función cuyos parámetros sean términos es un término.
+  
+A partir de una fórmula es necesario saber la cantidad de términos atómicos (constantes o variables).
+Implemente completamente en Smalltalk incluyendo los test cases.
