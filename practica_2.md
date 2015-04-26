@@ -1,6 +1,34 @@
 Orientación a Objetos 2 – Práctica 2
 ====================================
 
+Ejercicio 1: Patrón Adapter
+-----------------------
+
+Lea el capítulo 4 del libro Design Patterns de Gamma et al. y responda a las siguientes preguntas:
+
+1. ¿Qué es un patrón estructural?
+
+2. El capítulo menciona dos formas de implementar el patrón Adapter: como patrón estructural de clase y como
+patrón estructural de objeto. ¿Cuáles son esas dos formas? ¿Cuál de ellas no es implementable en Smalltalk?
+¿Por qué?
+
+Ejercicio 2: Adapter
+-----------------------
+
+Ud. ha implementado un exitoso cliente desktop que permite publicar en Facebook su estado de ánimo.
+En su sistema la clase Facebook implementa el mensaje #post:, donde recibe un string (sin límite de longitud)
+para ser publicado.
+Dada la popularidad de Twitter ahora ud. desea que su cliente también permita publicar en dicha red social. Lamen-
+tablemente se encuentra con 2 problemas:
+Los tweets son strings de a lo sumo 140 caracteres.
+La clase Twitter no entiende el mensaje #post: sino #publish:. También recibe como parámetro un String.
+Además, como su software funciona correctamente ud. desea introducir el menor número posible de modificaciones.
+A la vez, la clase Twitter pertence a una libría de terceros y no debería modificarla.
+Tareas:
+  -1. Diseñe la aplicación original.
+  -2. Discuta con el ayudante la inclusión del soporte a Twitter
+  -3. Explique cómo el patrón resuelve los problemas planteados.
+
 Ejercicio 3: Topografía
 -----------------------
 
