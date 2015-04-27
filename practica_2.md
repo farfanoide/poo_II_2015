@@ -71,6 +71,9 @@ Tareas:
   -2. Discuta con el ayudante la inclusión del soporte a Twitter
   
   -3. Explique cómo el patrón resuelve los problemas planteados.
+  
+  > Solucion Fran:
+  [Paquete Ejercicio 2](src/p2 francisco/P2E2.st)
 
 
 Ejercicio 3: Topografía
