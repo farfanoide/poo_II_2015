@@ -12,14 +12,35 @@ Lea el capítulo 4 del libro Design Patterns de Gamma et al. y responda a las si
 patrón estructural de objeto. ¿Cuáles son esas dos formas? ¿Cuál de ellas no es implementable en Smalltalk?
 ¿Por qué?
 
+  > Los patrónes estructurales se ocupan de cóme se conbinan las clases y los objetos para formar estructuras mas grandes.  Los patrónes estructurales de CLASES hacen uso de la herencia para componer interfaces o implementaciones.
 
+2. El capítulo menciona dos formas de implementar el patrón Adapter: como patrón estructural de clase y como
+patrón estructural de objeto. ¿Cuáles son esas dos formas? ¿Cuál de ellas no es implementable en Smalltalk?
+¿Por qué?.
+  
 
+  > Patrón estructural de clase:
+
+    >  - Adapta una clase Adaptable a Objetivo, pero se refiere únicamente a una clase Adaptable concreta. Por tanto un, un adaptador de clases no servira cuando lo que queremos es adaptar una clase y todas sus subclaes.
+  
+    > - Permite que Adaptador redefina parte del comportamiento de Adapter, por ser Adaptador una subclase de Adaptable.
+  
+    > - Introduce un solo objeto, y no se necesita ningun puntero de información adicional para obtener el objeto adaptado.
+    
+  > Patrón estructural de objeto:
+    
+    > - Permite que un mismo Adaptador funcione con muchos Adaptables, es decir, con el Adaptable en si y todas sus subclases, en caso de que las tenga.  El Adaptador también ṕuede añadir funcionalidad a todos los Adaptables a a vez.
+    
+    > - Hace que sea mas dificil de redefinir el comportamiento de Adaptable.  Se necesitará crear una sublclase de Adaptable y hacer que el Adaptador se refiera a la subclase en vez de a la clase Adaptable en si.
+    
+    
 Ejercicio 2: Adapter
 -----------------------
 
 Ud. ha implementado un exitoso cliente desktop que permite publicar en Facebook su estado de ánimo.
 En su sistema la clase Facebook implementa el mensaje #post:, donde recibe un string (sin límite de longitud)
 para ser publicado.
+
 Dada la popularidad de Twitter ahora ud. desea que su cliente también permita publicar en dicha red social. Lamen-
 tablemente se encuentra con 2 problemas:
 Los tweets son strings de a lo sumo 140 caracteres.
@@ -31,6 +52,25 @@ Tareas:
 2. Discuta con el ayudante la inclusión del soporte a Twitter
 3. Explique cómo el patrón resuelve los problemas planteados.
 4. Implemente en Smalltalk.
+
+=======
+
+Dada la popularidad de Twitter ahora ud. desea que su cliente también permita publicar en dicha red social. Lamen-
+tablemente se encuentra con 2 problemas:
+
+  - Los tweets son strings de a lo sumo 140 caracteres.
+
+  - La clase Twitter no entiende el mensaje #post: sino #publish:. También recibe como parámetro un String.
+
+Además, como su software funciona correctamente ud. desea introducir el menor número posible de modificaciones.
+A la vez, la clase Twitter pertence a una libría de terceros y no debería modificarla.
+Tareas:
+
+  -1. Diseñe la aplicación original.
+  
+  -2. Discuta con el ayudante la inclusión del soporte a Twitter
+  
+  -3. Explique cómo el patrón resuelve los problemas planteados.
 
 
 Ejercicio 3: Topografía
@@ -79,4 +119,71 @@ implementada mediante test cases.
   
 > Solucion Fran:
   [Paquete Ejercicio 3](src/p2 francisco/P2E3.st)
+  
+  Ejercicio 4: Modele comportamineto de un FileSystem
+-----------------------
 
+Un file system contiene un conjunto de directorios y archivos organizados jerárquicamente mediante una relación de
+inclusión. De cada archivo se conoce el nombre, fecha de creación y tamaño en bytes. De un directorio se conoce el
+nombre, fecha de creación y contenido (el tamaño es siempre 32kb). Modele el file system y provea la funcionalidad
+para consultar de un directorio:
+
+```sh
+Código 1: Interfaz a implementar
+```
+
+```sh
+1 #tamanoTotalOcupado
+
+2 "Retorna el espacio total ocupado en KB, incluyendo su contenido."
+
+3
+
+4 #listadoDeContenido
+
+5 "Imprime en el Transcript el listado del contenido del directorio siguiendo el
+
+6 modelo
+
+7 presentado a continuacion:
+
+8 - Directorio A
+
+9 --- Directorio A.1
+
+10 ------ Directorio A.1.1   3 archivos
+
+11 ------ Directorio A.1.2   2 archivos
+
+12 --- Directorio A.2
+
+13 - Directorio B "
+
+14
+
+15 #archivoMasGrande
+```
+
+Tareas:
+
+  - Diseñe y represente un modelo UML de clases de su aplicacion, identifique el patrón de diseño empleado (utilice estereotipos UML para indicar los roles de cada una de las clases en ese patrón).
+  
+  - Implemente completamente en Smalltalk.
+  
+  - Diseñe, implemente y ejecute test cases para verificar el funcionamiento de su aplicación.
+
+
+Ejercicio 5: Fórmulas con objetos
+-----------------------
+
+Veremos que es sencillo modelar formulas aplicando los conocimientos de patrones. Considerando las siguientes
+reglas modele e implemente las fórmulas
+
+  - Las constantes son términos.
+  
+  - Las variables son términos.
+  
+  - Una función cuyos parámetros sean términos es un término.
+  
+A partir de una fórmula es necesario saber la cantidad de términos atómicos (constantes o variables).
+Implemente completamente en Smalltalk incluyendo los test cases.
