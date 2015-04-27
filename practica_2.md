@@ -8,10 +8,28 @@ Lea el capítulo 4 del libro Design Patterns de Gamma et al. y responda a las si
 
 1. ¿Qué es un patrón estructural?
 
+  > Los patrónes estructurales se ocupan de cóme se conbinan las clases y los objetos para formar estructuras mas grandes.  Los patrónes estructurales de CLASES hacen uso de la herencia para componer interfaces o implementaciones.
+
 2. El capítulo menciona dos formas de implementar el patrón Adapter: como patrón estructural de clase y como
 patrón estructural de objeto. ¿Cuáles son esas dos formas? ¿Cuál de ellas no es implementable en Smalltalk?
-¿Por qué?
+¿Por qué?.
+  
 
+  > Patrón estructural de clase:
+
+    >  - Adapta una clase Adaptable a Objetivo, pero se refiere únicamente a una clase Adaptable concreta. Por tanto un, un adaptador de clases no servira cuando lo que queremos es adaptar una clase y todas sus subclaes.
+  
+    > - Permite que Adaptador redefina parte del comportamiento de Adapter, por ser Adaptador una subclase de Adaptable.
+  
+    > - Introduce un solo objeto, y no se necesita ningun puntero de información adicional para obtener el objeto adaptado.
+    
+  > Patrón estructural de objeto:
+    
+    > - Permite que un mismo Adaptador funcione con muchos Adaptables, es decir, con el Adaptable en si y todas sus subclases, en caso de que las tenga.  El Adaptador también ṕuede añadir funcionalidad a todos los Adaptables a a vez.
+    
+    > - Hace que sea mas dificil de redefinir el comportamiento de Adaptable.  Se necesitará crear una sublclase de Adaptable y hacer que el Adaptador se refiera a la subclase en vez de a la clase Adaptable en si.
+    
+    
 Ejercicio 2: Adapter
 -----------------------
 
