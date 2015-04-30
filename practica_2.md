@@ -165,6 +165,15 @@ Código 1: Interfaz a implementar
 14
 
 15 #archivoMasGrande
+
+16 "Retorna el archivo con mayor cantidad de bytes en cualquier nivel del filesystem contenido por directorio receptor"
+
+19
+
+20 #archivoMasNuevo
+
+21 "retorna el archivo con fecha de creacion mas recienteen cualquier nivel del filesystem contenido por directorio receptor"
+
 ```
 
 Tareas:
