@@ -180,6 +180,10 @@ Tareas:
 
   - Diseñe y represente un modelo UML de clases de su aplicacion, identifique el patrón de diseño empleado (utilice estereotipos UML para indicar los roles de cada una de las clases en ese patrón).
   
+
+> El patrón de Diseño utilizado es el Estructural -> Composite
+  
+
   - Implemente completamente en Smalltalk.
   
   - Diseñe, implemente y ejecute test cases para verificar el funcionamiento de su aplicación.
