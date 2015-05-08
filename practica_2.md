@@ -155,48 +155,48 @@ file system y provea la funcionalidad para consultar de un directorio:
 
 Código 1: Interfaz a implementar
 
-```smalltalk
-#tamanoTotalOcupado
-  "Retorna el espacio total ocupado en KB, incluyendo su contenido."
-```
+  ```smalltalk
+  #tamanoTotalOcupado
+    "Retorna el espacio total ocupado en KB, incluyendo su contenido."
+  ```
 
-```smalltalk
-#listadoDeContenido
-  "Imprime en el Transcript el listado del contenido del directorio"
-```
+  ```smalltalk
+  #listadoDeContenido
+    "Imprime en el Transcript el listado del contenido del directorio"
+  ```
 
 Imprime en el Transcript el listado del contenido del directorio siguiendo el
 modelo presentado a continuacion:
 
-```
-- Directorio A
+  ```
+  - Directorio A
 
---- Directorio A.1
+  --- Directorio A.1
 
------- Directorio A.1.1   3 archivos
+  ------ Directorio A.1.1   3 archivos
 
------- Directorio A.1.2   2 archivos
+  ------ Directorio A.1.2   2 archivos
 
---- Directorio A.2
+  --- Directorio A.2
 
-- Directorio B "
-```
-
-
-
-```smalltalk
-#archivoMasGrande
- "Retorna el archivo con mayor cantidad de bytes en cualquier nivel del
- filesystem contenido por directorio receptor"
-```
+  - Directorio B "
+  ```
 
 
 
-```smalltalk
-#archivoMasNuevo
- "retorna el archivo con fecha de creacion mas recienteen cualquier nivel del
- filesystem contenido por directorio receptor"
-```
+  ```smalltalk
+  #archivoMasGrande
+   "Retorna el archivo con mayor cantidad de bytes en cualquier nivel del
+   filesystem contenido por directorio receptor"
+  ```
+
+
+
+  ```smalltalk
+  #archivoMasNuevo
+   "retorna el archivo con fecha de creacion mas recienteen cualquier nivel del
+   filesystem contenido por directorio receptor"
+  ```
 
 Tareas:
 
