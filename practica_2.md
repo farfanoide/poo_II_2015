@@ -2,7 +2,7 @@ Orientación a Objetos 2 – Práctica 2
 ====================================
 
 Ejercicio 1: Patrón Adapter
------------------------
+---------------------------
 
 Lea el capítulo 4 del libro Design Patterns de Gamma et al. y responda a las
 siguientes preguntas:
@@ -49,7 +49,7 @@ siguientes preguntas:
 
 
 Ejercicio 2: Adapter
------------------------
+--------------------
 
 Ud. ha implementado un exitoso cliente desktop que permite publicar en Facebook
 su estado de ánimo. En su sistema la clase Facebook implementa el mensaje
@@ -101,8 +101,8 @@ Ejercicio 3: Topografía
 -----------------------
 
 Un objeto Topografía representa la distribución de agua y tierra de una región
-cuadrada del planeta, la cual está formada por porciones de “agua” y de
-“tierra”. La figura 1a muestra el aspecto de una topografía formada únicamente
+cuadrada del planeta, la cual está formada por porciones de "agua" y de
+"tierra". La figura 1a muestra el aspecto de una topografía formada únicamente
 por agua, otra formada sólamente por tierra (fig. 1b) y una topografía mixta
 (fig. 1c).
 
@@ -126,9 +126,9 @@ proporción siempre es un valor entre 0 y 1.
 
 1. Implemente las clases necesarias para que sea posible:
 
-  - crear Topografías
-  - calcular su proporción de agua y tierra
-  - comparar igualdad entre topografías (dada por igual proporción de agua y
+  - Crear Topografías
+  - Calcular su proporción de agua y tierra
+  - Comparar igualdad entre topografías (dada por igual proporción de agua y
     tierra e igual distribución).
 
 2. Instancie la topografía compuesta del ejemplo y pruebe la funcionalidad
@@ -144,8 +144,8 @@ proporción siempre es un valor entre 0 y 1.
 > Solucion Fran:
   [Paquete Ejercicio 3](src/p2 francisco/P2E3.st)
 
-  Ejercicio 4: Modele comportamineto de un FileSystem
------------------------
+Ejercicio 4: Modele comportamineto de un FileSystem
+---------------------------------------------------
 
 Un file system contiene un conjunto de directorios y archivos organizados
 jerárquicamente mediante una relación de inclusión. De cada archivo se conoce
