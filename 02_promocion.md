@@ -40,7 +40,8 @@ la lista de tareas.
      la película. Pero cuando se va a buscar un dato adicional, se recuperan
      todos los datos (lazy por película, pero no por atributo).
 
-2. El sistema debe permitir implementar varios mecanismos de recomendacion de peliculas:
+2. El sistema debe permitir implementar varios mecanismos de recomendacion de
+   peliculas:
 
   1. Un mecanismo similar al implementado en el primer enunciado pero las
      peliculas deben ser ordenadas por antigüedad (las más antiguas primero).
@@ -56,7 +57,8 @@ Para diseñar los mecanismos de recomendación considere que:
   1. En el futuro se podrán agregar nuevos métodos de recomendación.
   2. Solo un método de sugerencia puede estar activo.
   3. El método de sugerencia debe poder ser cambiado dinámicamente.
-  4. El usuario determina arbitrariamente que método de sugerencia quiere utilizar
+  4. El usuario determina arbitrariamente que método de sugerencia quiere
+     utilizar
 
 Tareas
 ------
@@ -76,7 +78,7 @@ Tareas
 2. Implemente:
 
   1. Es posible que en este punto debe realizar refactorings antes de comenzar
-     la implementación. Indique qué refactorings aplicó. (guarde ambas
+     la implementación. Indique qué refactorings aplicó. (Guarde ambas
      versiones del código, para mostrar al ayudante..)
   2. Escriba los test cases correspondientes a los nuevos algoritmos de
      recomendación.
@@ -101,7 +103,7 @@ del código.
 2. Guardado de la versión del segundo visado: Escriba el código necesario y
    vuelva a utilizar la operación `commit` para guardar la segunda versión.
    Verifique que independiente del nombre descriptivo que elija para esta
-   segunda versión, se registrar como ".2"
+   segunda versión, se registra como ".2"
 
    ![Guardado de la segundo visado](img/promocion/guardado_segundo_visado.png)
 
@@ -117,5 +119,5 @@ del código.
    ![seleccion version](img/promocion/seleccion_version.png)
 
 4. Transportar el código a otra imagen: Para ello, necesita trasladar los
-   archivos .mc\* que se ubican en la carpeta "C:\Pharo4.0\package- cache" (o el
+   archivos .mc\* que se ubican en la carpeta "C:\Pharo4.0\package-cache" (o el
    repositorio que posea).

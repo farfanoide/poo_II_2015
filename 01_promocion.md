@@ -15,56 +15,52 @@ asignaron. Importante: debe utilizar Pharo 4 para realizar este trabajo.
 
 La cátedra provee los siguientes elementos de trabajo:
 
-  1. Código Smalltalk con un modelo inicial de objetos del dominio. Instale
-     evaluando la siguiente expresión en un workspace:
+1. Código Smalltalk con un modelo inicial de objetos del dominio. Instale
+   evaluando la siguiente expresión en un workspace:
 
   ```smalltalk
-  Gofer new url: 'http://smalltalkhub.com/mc/arturozambrano/Movielens/main'
-            package: 'Movielens'
+      Gofer new
+            url: 'http://smalltalkhub.com/mc/arturozambrano/Movielens/main';
+            package:'Movielens';
             load.
   ```
 
-  <!--  TODO: bajar archivos y agregarlos al repo -->
+2. Archivos con datos de peliculas, ratings y usuarios: Acceda a
+   http://goo.gl/L94CkS, descargue y descomprima en el directorio donde
+   almacena sus imágenes de Pharo.
 
-  2. Archivos con datos de peliculas, ratings y usuarios: Acceda a
-     <http://goo.gl/L94CkS>, descargue y descomprima en el directorio donde
-     almacena sus imágenes de Pharo.
-
-  3. Paquete XML Parser: Instale el paquete XML Parser (cualquiera sea su
-     versión monty.*) usando el `Configuration Browser`, como se muestra en la
-     siguiente figura.
+3. Paquete XML Parser: Instale el paquete XML Parser (cualquiera sea su versión
+   monty.x) usando el `Configuration Browser`, como se muestra en la siguiente
+   figura. (este paso requiere internet)
 
   ![instalacion xml parser](img/promocion/instalacion_parser.png)
 
 
-  4. Importación de datos de películas, ratings y usuarios: Ejecute la
-     siguiente expresión para cargar en la imagen Pharo todos los objetos
-     necesarios.
+4. Importación de datos de películas, ratings y usuarios: Ejecute la siguiente
+   expresión para cargar en la imagen Pharo todos los objetos necesarios.
 
-    ```smalltalk
-    Movielens default importAllData
-    ```
+  ```smalltalk
+  Movielens default importAllData
+  ```
 
-    Inspeccione los objetos evaluando (con inspect) las siguientes expresiones.
+  Inspeccione los objetos evaluando (con inspect) las siguientes expresiones.
 
-    ```smalltalk
-    Movielens default users.
+  ```smalltalk
+  Movielens default users.
 
-    Movielens default movies.
+  Movielens default movies.
 
-    Movielens default ratings.
-    ```
+  Movielens default ratings.
+  ```
 
-
-    Al inspeccionar las peliculas notará que no tienen cargada toda la
-    información que uno quisiera ver, por ej. no se encuentra el guión,
-    los actores, director, etc. Para solucionar este problema se le provee
-    la clase `OMDBRetriever`, la cual, dado un ID (imdbID) permite recuperar
-    desde un repositorio público en internet todos los datos de la película
-    relacionada a dicho ID (en particular, preste atención al método
-    `#retrieveMovieAttributesOf: id`). Por otro lado, notará que alrededor del
-    60% de las películas no tienen el ID, por lo tanto, para ellas es imposible
-    obtener esa información extra.
+  Al inspeccionar las peliculas notará que no tienen cargada toda la información
+  que uno quisiera ver, por ej. no se encuentra el guión, los actores, director,
+  etc. Para solucionar este problema se le provee la clase `OMDBRetriever`, la
+  cual, dado un ID (imdbID) permite recuperar desde un repositorio público en
+  internet todos los datos de la película relacionada a dicho ID (en particular,
+  preste atención al método `#retrieveMovieAttributesOf: id`). Por otro lado,
+  notará que alrededor del 60% de las películas no tienen el ID, por lo tanto,
+  para ellas es imposible obtener esa información extra.
 
 Tareas:
 -------
@@ -73,7 +69,7 @@ Tareas:
    mediante un diagrama de clases (no incluya el protocolo, solo los nombres de
    las clases y las variables de instancia).
 
-2. Utilizando el `OMDBMovieRetrieverimplemente` la siguiente funcionalidad:
+2. Utilizando el `OMDBMovieRetriever` implemente la siguiente funcionalidad:
    cuando a una película se le pide un dato que no tiene debe utilizar el
    retriever para completar TODOS sus datos, y luego retornar el dato
    originalmente solicitado. Obviamente aquellas que no tengan ID no pueden ser
@@ -82,18 +78,16 @@ Tareas:
 
 3. Implemente la recomendación de peliculas basada en el siguiente criterio:
 
-  Dado un usuario deberá ser posible obtener las películas que más de la mitad de
-  sus amigos evaluaron con 4 o más, y que él todavía no evaluó.
+  Dado un usuario deberá ser posible obtener las películas que más de la mitad
+  de sus amigos evaluaron con 4 o más, y que él todavía no evaluó.
 
   Decida Ud. que mensaje hay que enviar a cual objeto para obtener las
   recomendaciones para un usuario. La cantidad máxima de películas que desea
   obtener de la recomendación debe ser parametrizable, la lista debe estar
   ordenada de mayor a menor rating.
 
-
 4. Implemente los test de unidad necesarios para probar que las recomendaciones
    generadas son correctas.
-
 
 5. Implemente las siguientes consultas (defina Ud la clase en la que deben
    estar implementados los correspondientes mensajes):
