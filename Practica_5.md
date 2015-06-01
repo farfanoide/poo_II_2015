@@ -45,16 +45,18 @@ ponde al diagrama de clases de la figura pasa exitosamente los test cases. Haga 
 al diseño, implemente los cambios al codigo de las clases Inmueble, ViviendaUnica y CasaFinDeSemana.
 Verifique que el nuevo código también pasa exitosamente los tests.
 
-
+![ejer3-1](img/pg/ejer3-1.png)
 
 
   2. La clase Cliente tiene el siguiente protocolo público. ¿Cómo puede mejorarlo?
   
+```  
 # lmtCrdt devuelve el límite de crédito del cliente.
 
 # mtFcE: unaFecha y: otraFecha devuelve el monto facturado al cliente desde unaFecha hasta otraFecha
 
 # mtCbE: unaFecha y: aux devuelve el monto cobrado al cliente desde unaFecha hasta otraFecha
+```
 
 
   3. Al revisar el siguiente diseño inicial (figura 2), se decidió realizar un cambio para evitar lo que se consideraba
@@ -75,6 +77,6 @@ considera apropiado. Justifique su respuesta.
     personal do: [ :empleado | totalEdades := totalEdades + empleado edad.
                               totalSalarios := totalSalarios + empleado salario].
     promedioEdades := totalEdades / personal size.
-    Transcript show: ’Edad promedio: ’ , promedioEdad printString ,’ - Total de salarios: ’ , totalSalarios         printString.
+    Transcript show: ’Edad promedio: ’ , promedioEdad printString ,’ - Total de salarios: ’ , totalSalarios printString.
   ```
 
