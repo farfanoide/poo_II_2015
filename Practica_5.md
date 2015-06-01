@@ -68,19 +68,12 @@ considera apropiado. Justifique su respuesta.
   
   
   ```#imprimirValores
-  
     |totalEdades promedioEdades totalSalarios|
-    
     totalEdades := 0.
-    
     totalSalarios := 0.
-    
     personal do: [ :empleado | totalEdades := totalEdades + empleado edad.
-    
                               totalSalarios := totalSalarios + empleado salario].
-                              
     promedioEdades := totalEdades / personal size.
-    
-    Transcript show: ’Edad promedio: ’ , promedioEdad printString ,’ - Total de salarios: ’ , totalSalarios printString.
+    Transcript show: ’Edad promedio: ’ , promedioEdad printString ,’ - Total de salarios: ’ , totalSalarios         printString.
   ```
 
