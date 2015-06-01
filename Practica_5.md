@@ -50,11 +50,11 @@ Verifique que el nuevo código también pasa exitosamente los tests.
 
   2. La clase Cliente tiene el siguiente protocolo público. ¿Cómo puede mejorarlo?
   
-#lmtCrdt devuelve el límite de crédito del cliente.
+# lmtCrdt devuelve el límite de crédito del cliente.
 
-#mtFcE: unaFecha y: otraFecha devuelve el monto facturado al cliente desde unaFecha hasta otraFecha
+# mtFcE: unaFecha y: otraFecha devuelve el monto facturado al cliente desde unaFecha hasta otraFecha
 
-#mtCbE: unaFecha y: aux devuelve el monto cobrado al cliente desde unaFecha hasta otraFecha
+# mtCbE: unaFecha y: aux devuelve el monto cobrado al cliente desde unaFecha hasta otraFecha
 
 
   3. Al revisar el siguiente diseño inicial (figura 2), se decidió realizar un cambio para evitar lo que se consideraba
@@ -67,7 +67,8 @@ considera apropiado. Justifique su respuesta.
   4. Analice el código que se muestra a continuación. Indique qué defectos encuentra y cómo pueden corregirse.
   
   
-  ```#imprimirValores
+  ```
+  # imprimirValores
     |totalEdades promedioEdades totalSalarios|
     totalEdades := 0.
     totalSalarios := 0.
