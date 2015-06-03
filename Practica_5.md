@@ -8,11 +8,11 @@ Indique si cada una de las siguientes aseveraciones es verdadera o falsa. Expliq
 
   1. Cuando un código es refactorizado cambia su comportamiento agregando más funcionalidad.
   
-  > FALSO: No cambia el comportamiento ni agrega más funcionalidad, mejora su estructura interna. El comportamiento   > no se altera, mejora la legibilidad, adaptabilidad, mantenibilidad y organización del código.
+  > FALSO: No cambia el comportamiento ni agrega más funcionalidad, mejora su estructura interna. El comportamiento    no se altera, mejora la legibilidad, adaptabilidad, mantenibilidad y organización del código.
 
   2. Si el código está bien refactorizado no es necesario testearlo.
   
-  > FALSO: (por ej) Al refactorizar el código puede que se renombren métodos. Si no se testea el código antes de     > ponerse en funcionamiento puede que el código este haciendo llamadas a los viejos métodos y no a los nuevos. (   > diapositiva 63).
+  > FALSO: (por ej) Al refactorizar el código puede que se renombren métodos. Si no se testea el código antes de      ponerse en funcionamiento puede que el código este haciendo llamadas a los viejos métodos y no a los nuevos. (    diapositiva 63).
   
   3. Después de ser refactorizado, la estructura interna del código permanece igual que antes.
   
