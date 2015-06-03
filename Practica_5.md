@@ -31,9 +31,13 @@ Responda:
 
   1. Qué significa la expresión “código con mal olor” según lo visto en la teoría?.
   
+  > Significa que al ver un código el mismo no es fácil de leer para entenderlo, de mantenerlo, de adaptarlo.
+  
   2. Encuentre tres casos de los “malos olores” explicados en la teoría en su propio código de los prácticos anteriores.
   
   3. Indique tres razones por las cuales es importante hacer refactoring.
+  
+  > Es una defensa contra el deterioro del software. Facilita la incorporación de código. Permite agregar patrones después de haber escrito el código, y luego transformar un programa en un framework. 
   
   
   
@@ -66,7 +70,13 @@ Verifique que el nuevo código también pasa exitosamente los tests.
 
 # mtCbE: unaFecha y: aux devuelve el monto cobrado al cliente desde unaFecha hasta otraFecha
 ```
+> Los nombres de los métodos no son claros. Esto es muy subjetivo, yo pondría estos nombres:
 
+```	
+	#limiteDeCredito
+	#montoFacturadoEntre: fechaInicio y: fechaFin
+	#montoFacturadoEntre: fechaInicio y: fechaFin
+```
 
   3. Al revisar el siguiente diseño inicial (figura 2), se decidió realizar un cambio para evitar lo que se consideraba
 un mal olor. El diseño modificado se muestra en la figura 3. Indique qué tipo de cambio se realizó y si lo
