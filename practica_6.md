@@ -12,9 +12,9 @@ siguientes tareas:
 
 
   - De una caja de ahorro se puede extraer montos menores o iguales al saldo.
-  - 
+  
   - El saldo se actualiza correctamente cuando se realiza un depósito.
-  - 
+  
   - De una cuenta corriente se puede extraer hasta alcanzar el rojo permitido.
   
 
