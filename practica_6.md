@@ -12,9 +12,7 @@ siguientes tareas:
 
 
   - De una caja de ahorro se puede extraer montos menores o iguales al saldo.
-  
   - El saldo se actualiza correctamente cuando se realiza un depósito.
-  
   - De una cuenta corriente se puede extraer hasta alcanzar el rojo permitido.
   
 
@@ -52,9 +50,9 @@ Salesman >> pendingMoney
   ^tot
   
   Salesman >> pendingSalesNumber
-  | ps |
-  ps := sales select:[:s | s pending].
-  ^ps size
+    | ps |
+    ps := sales select:[:s | s pending].
+    ^ps size
 ```
 
 En el material adicional de la práctica encontrará la implementación de las clases mencionadas y los test cases para verificar el funcionamiento.
@@ -64,3 +62,73 @@ Tareas
 
   - Refactorice los métodos de la clase Salesman.
   - Compruebe que la funcionalidad sigue intacta corriendo los tests con el código modificado.
+
+
+
+Ejercicio 3: Video Club
+-------------------------------------
+
+
+Lea atentamente los siguientes diagramas y métodos:
+
+```
+>>statement
+  | result |
+  result := ’Rental Record for’ , self name , Character cr.
+  rentals do: [ :aRental |result := result , aRental movie title , ’ ’ ,aRental charge , Character cr.].
+  result := result, ’Amount owed is ’, self totalCharge , Character cr.
+  result := result,’You earned ’ , self totalFrequenRenterPoints ,’ frequent renter points.’.
+  ^ result
+
+>>htmlStatement
+  | result |
+  result := ’<H1>Rentals for <EM>’ , self name , ’ </EM></H1><P> ’ , Character cr.
+  rentals do: [ :aRental | result := result , aRental movie title , ’: ’ , aRental charge ,’<BR>’, Character cr.].
+  result := result, ’<P>You owe <EM> ’, self totalCharge , ’</EM><P>’ ,Character cr.
+  result := result,’ On this rental you earned <EM> ’ , self totalFrequenRenterPoints , ’ </EM> frequent renter points<P>’.
+  ^ result
+```
+
+Tareas:
+
+
+1. Refactorice los métodos `#statement` y `#htmlStatemen`t para mejorar el diseño.
+Utilice como base el código que se entrega en el material adicional de la práctica. Antes de hacer cambios,
+verifique que el código original (que responde a los diagramas y texto del enunciado) pasa exitosamente los
+testCases incluidos. Luego haga las modificaciones que se piden al diseño e implemente los cambios al código
+para responder a su nuevo diseño.
+
+2. Verifique que el nuevo código también pasa exitosamente los mismos tests.
+
+3. Documente los pasos de refactoring aplicados indicando las técnicas de refactorings que utiliza.
+
+
+
+Ejercicio 4:
+-------------------------------------
+
+Considere código escrito por ud. puede pertenecer a prácticas anteriores o a Objetos 1.
+
+  - Identifique smells.
+  - Seleccione 2 smells que desea eliminar y escriba los test cases para el código que va refactorizar.
+  - Refactorice y verifique que el programa refactorizado sigue pasando los tests.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
