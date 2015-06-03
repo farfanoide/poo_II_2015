@@ -47,6 +47,9 @@ Verifique que el nuevo código también pasa exitosamente los tests.
 
 ![ejer3-1](img/p5/ejer3-1.png)
 
+> Solucion Fran:
+  [Paquete Ejercicio 2](src/p5 francisco/)
+
 
   2. La clase Cliente tiene el siguiente protocolo público. ¿Cómo puede mejorarlo?
   
