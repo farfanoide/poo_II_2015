@@ -1,6 +1,8 @@
 Orientación a Objetos 2 -Práctica 6
 ====================================
 
+
+
 Ejercicio 1: Testee, revise y proponga mejoras a un código existente
 -------------------------------------
 
