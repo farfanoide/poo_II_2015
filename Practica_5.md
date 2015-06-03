@@ -45,7 +45,7 @@ ponde al diagrama de clases de la figura pasa exitosamente los test cases. Haga 
 al diseño, implemente los cambios al codigo de las clases Inmueble, ViviendaUnica y CasaFinDeSemana.
 Verifique que el nuevo código también pasa exitosamente los tests.
 
-![ejer3-1](img/pg/ejer3-1.png)
+![ejer3-1](img/p5/ejer3-1.png)
 
 
   2. La clase Cliente tiene el siguiente protocolo público. ¿Cómo puede mejorarlo?
@@ -63,7 +63,7 @@ Verifique que el nuevo código también pasa exitosamente los tests.
 un mal olor. El diseño modificado se muestra en la figura 3. Indique qué tipo de cambio se realizó y si lo
 considera apropiado. Justifique su respuesta.
 
-
+![ejer3-3](img/p5/ejer3-3.png)
 
 
   4. Analice el código que se muestra a continuación. Indique qué defectos encuentra y cómo pueden corregirse.
