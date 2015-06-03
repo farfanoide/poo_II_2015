@@ -73,7 +73,7 @@ Ejercicio 3: Video Club
 
 Lea atentamente los siguientes diagramas y métodos:
 
-![Figura 1: Distintas topografías](img/p6/ejer3.png)
+![Video Club](img/p6/ejer3.png)
 
 ```
 >>statement
