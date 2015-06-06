@@ -36,10 +36,7 @@ Ejercicio 2: Un poco más de refactoring
 -------------------------------------
 
 
-En un sistema existen vendedores, representados por instancias de la clase Salesman. Estos vendedores realizan ven-
-tas, que son objetos de la clase Sale, que a su vez tienen un monto (responden al mensaje `#amount`) y pueden estar
-cobradas o pendientes (responden a `#pending`, que retorna un Boolean). Un vendedor sabe decir cuánto dinero le
-queda por cobrar (`#pendingMoney`) y también sabe decir cuántas ventas pendientes tiene (`#pendingSalesNumber`).
+En un sistema existen vendedores, representados por instancias de la clase Salesman. Estos vendedores realizan ventas, que son objetos de la clase Sale, que a su vez tienen un monto (responden al mensaje `#amount`) y pueden estar cobradas o pendientes (responden a `#pending`, que retorna un Boolean). Un vendedor sabe decir cuánto dinero le queda por cobrar (`#pendingMoney`) y también sabe decir cuántas ventas pendientes tiene (`#pendingSalesNumber`).
 Los métodos `#pendingMoney` y `#pendingSalesNumber` han sido implementados de la siguiente manera:
 
 
