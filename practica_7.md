@@ -17,7 +17,7 @@ Considerando la implementación de la clase Shape, provista por la cátedra. Rea
 
 2. Se requiere el cálculo del perímetro para todas las figuras.
 
-Discuta con un ayudante:
+- Discuta con un ayudante:
 
 1. Es posible realizar de manera sencilla las extensiones propuestas?
 
@@ -25,7 +25,8 @@ Discuta con un ayudante:
 
 3. Considerando los nuevos requerimientos discuta en qué orden realizará las siguientes tareas (puede repetir
 algunas de ellas): refactoring, diseño final al que quiere llegar, testing, refactoring de los test cases.
-Implemente en Smalltalk los requerimientos planteados, y todas aquellas modificaciones que considere necesarias (incluyendo el mantenimiento y extensión de los test cases).
+
+- Implemente en Smalltalk los requerimientos planteados, y todas aquellas modificaciones que considere necesarias (incluyendo el mantenimiento y extensión de los test cases).
 
 
 
@@ -39,8 +40,8 @@ análisis estadísticos sobre una base de tweets.
 En la clase TweetBase se encuentran implementados algunos métodos para calcular descriptores estadísticos:
 
 ```
-  deviationTweetPerUser: calcula la desviación estándar de la cantidad de tweets enviados por usuario
-  varianceTweetsPerUser: calcula la varianza de la cantidad de tweets enviados por usuario
+deviationTweetPerUser: calcula la desviación estándar de la cantidad de tweets enviados por usuario
+varianceTweetsPerUser: calcula la varianza de la cantidad de tweets enviados por usuario
 ```
 
 En los dos casos, el algoritmo de cálculo tiene los mismos pasos:
@@ -58,6 +59,6 @@ encontrará expresiones que puede emplear como base para armar los casos de prue
 
 2. Ejecute los casos de prueba 
 
-3. Realice todeas las refactorizaciones que considere necesarias en el código de deviationTweetsPerUser y varianceTweetsPerUser de la clase TweetBase.
+3. Realice todeas las refactorizaciones que considere necesarias en el código de ```deviationTweetsPerUser``` y ```varianceTweetsPerUser``` de la clase ```TweetBase```.
 
 4. Ejecute los casos de prueba sobre el código refactorizado
