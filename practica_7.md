@@ -64,6 +64,59 @@ Tareas:
 
 3. Realice todeas las refactorizaciones que considere necesarias en el código de ```deviationTweetsPerUser``` y ```varianceTweetsPerUser``` de la clase ```TweetBase```.
 
+```
+TweetBase>>calculateTweetsPerUser
+  "calculates tweets per user"
+	|result|
+
+	result := Dictionary new.
+	tweets
+		do: [ :tweet | 
+			| user |
+			user := tweet user.
+			result at: user ifAbsentPut: 0.
+			result at: user put: (result at: user) + 1 ].
+	^result.
+	
+TweetBase>>calculateMean: aResult
+  "calculates the mean"
+	
+	^(aResult inject: 0 into: [:total :a | total + a ] ) / aResult size. 	
+
+
+TweetBase>>varianceCalculationWith: aMean and: aResult
+  "use the mean for variance calculation"
+	|total|
+
+	total := 0.
+	aResult associationsDo: [ :assoc | total := total + ((assoc value - aMean) * (assoc value - aMean)) ].
+	
+	^ total / (aResult size)
+
+
+TweetBase>>varianceTweetsPerUser
+  "returns the variance of  tweets groups by user"
+	| result  mean |
+	
+	"calculates tweets per user"
+	result := self calculateTweetsPerUser .
+	
+	"calculates the mean"
+	mean:= self calculateMean: result.
+	
+	"use the mean for variance calculation"
+	
+	^self varianceCalculationWith: mean and: result
+	
+
+TweetBase>>deviationTweetsPerUser
+  "returns the deviation of  tweets groups by user"
+
+	^(self varianceTweetsPerUser) sqrt asFloat
+
+
+```
+
 4. Ejecute los casos de prueba sobre el código refactorizado.
 
 
