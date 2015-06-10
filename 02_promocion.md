@@ -61,7 +61,7 @@ Para diseñar los mecanismos de recomendación considere que:
      utilizar
 
 Tareas
-------
+======
 
 1. Diseñe la aplicación para considerar los requerimientos indicados.
 
@@ -90,6 +90,9 @@ Tareas
 
 Nota: Considere la siguiente guía para poder llevar al visado las dos versiones
 del código.
+
+  > Solucion:
+  [Movielens](src/promocion/Movielens.st)
 
 1. Guardado de la versión inicial (la del primer visado): Elija cada uno de los
    paquetes de la versión inicial y ejecute "commit in..."

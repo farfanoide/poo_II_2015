@@ -31,15 +31,16 @@ continúa comportándose correctamente.
 conclusión.
 
 
+> Solucion Fran:
+  [Paquete Ejercicio 1](src/p6 francisco/P6E1.st)
+
+
 
 Ejercicio 2: Un poco más de refactoring
 -------------------------------------
 
 
-En un sistema existen vendedores, representados por instancias de la clase Salesman. Estos vendedores realizan ven-
-tas, que son objetos de la clase Sale, que a su vez tienen un monto (responden al mensaje `#amount`) y pueden estar
-cobradas o pendientes (responden a `#pending`, que retorna un Boolean). Un vendedor sabe decir cuánto dinero le
-queda por cobrar (`#pendingMoney`) y también sabe decir cuántas ventas pendientes tiene (`#pendingSalesNumber`).
+En un sistema existen vendedores, representados por instancias de la clase Salesman. Estos vendedores realizan ventas, que son objetos de la clase Sale, que a su vez tienen un monto (responden al mensaje `#amount`) y pueden estar cobradas o pendientes (responden a `#pending`, que retorna un Boolean). Un vendedor sabe decir cuánto dinero le queda por cobrar (`#pendingMoney`) y también sabe decir cuántas ventas pendientes tiene (`#pendingSalesNumber`).
 Los métodos `#pendingMoney` y `#pendingSalesNumber` han sido implementados de la siguiente manera:
 
 
@@ -64,6 +65,10 @@ Tareas
 
   - Refactorice los métodos de la clase Salesman.
   - Compruebe que la funcionalidad sigue intacta corriendo los tests con el código modificado.
+  - 
+  
+> Solucion Fran:
+  [Paquete Ejercicio 2](src/p6 francisco/P6E2.st)
 
 
 
@@ -105,6 +110,10 @@ para responder a su nuevo diseño.
 2. Verifique que el nuevo código también pasa exitosamente los mismos tests.
 
 3. Documente los pasos de refactoring aplicados indicando las técnicas de refactorings que utiliza.
+
+
+> Solucion Fran:
+  [Paquete Ejercicio 3](src/p6 francisco/P6E3.st)
 
 
 
