@@ -31,6 +31,10 @@ continúa comportándose correctamente.
 conclusión.
 
 
+> Solucion Fran:
+  [Paquete Ejercicio 1](src/p6 francisco/P6E1.st)
+
+
 
 Ejercicio 2: Un poco más de refactoring
 -------------------------------------
@@ -61,6 +65,10 @@ Tareas
 
   - Refactorice los métodos de la clase Salesman.
   - Compruebe que la funcionalidad sigue intacta corriendo los tests con el código modificado.
+  - 
+  
+> Solucion Fran:
+  [Paquete Ejercicio 2](src/p6 francisco/P6E2.st)
 
 
 
@@ -102,6 +110,10 @@ para responder a su nuevo diseño.
 2. Verifique que el nuevo código también pasa exitosamente los mismos tests.
 
 3. Documente los pasos de refactoring aplicados indicando las técnicas de refactorings que utiliza.
+
+
+> Solucion Fran:
+  [Paquete Ejercicio 3](src/p6 francisco/P6E3.st)
 
 
 
