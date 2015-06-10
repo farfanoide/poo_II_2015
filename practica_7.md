@@ -29,6 +29,10 @@ algunas de ellas): refactoring, diseño final al que quiere llegar, testing, ref
 - Implemente en Smalltalk los requerimientos planteados, y todas aquellas modificaciones que considere necesarias (incluyendo el mantenimiento y extensión de los test cases).
 
 
+> Solucion Fran:
+  [Paquete Ejercicio 1](src/p7 francisco/)
+
+
 
 Ejercicio 2: Refactorice usando patrones
 -------------------------------------
@@ -54,11 +58,14 @@ En los dos casos, el algoritmo de cálculo tiene los mismos pasos:
 
 Tareas:
 
-1. Realice los casos de prueba para validar los métodos provistos. En el archivo txt incluido en el material adicional
-encontrará expresiones que puede emplear como base para armar los casos de prueba.
+1. Realice los casos de prueba para validar los métodos provistos. En el archivo txt incluido en el material adicional encontrará expresiones que puede emplear como base para armar los casos de prueba.
 
 2. Ejecute los casos de prueba 
 
 3. Realice todeas las refactorizaciones que considere necesarias en el código de ```deviationTweetsPerUser``` y ```varianceTweetsPerUser``` de la clase ```TweetBase```.
 
-4. Ejecute los casos de prueba sobre el código refactorizado
+4. Ejecute los casos de prueba sobre el código refactorizado.
+
+
+> Solucion Fran:
+  [Paquete Ejercicio 2](src/p7 francisco/)
