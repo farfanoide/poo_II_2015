@@ -20,17 +20,23 @@ Considerando la implementación de la clase Shape, provista por la cátedra. Rea
 - Discuta con un ayudante:
 
 1. Es posible realizar de manera sencilla las extensiones propuestas?
+	
+> Si, es posible realizar de manera sencilla, solo hay que extender el condicional de la clase Shape agregando el calculo del area para la figura nueva.  Luego agregar el metodo ```#perimetro``` implementado de la misma manera que el metodo ```#area```.
 
 2. Cómo se puede mejorar el código y el diseño?
 
+> El diseño se puede mejorar jerarquiazando figuras para Shape.  En cuanto al código se puede realizar refactoring Extrayendo metodos, reemplazando condicionales por polimorfismo.
+
 3. Considerando los nuevos requerimientos discuta en qué orden realizará las siguientes tareas (puede repetir
 algunas de ellas): refactoring, diseño final al que quiere llegar, testing, refactoring de los test cases.
+
+> 1-Testing -> 2-Refactoring -> 3-Testing -> 4-Refactoring de los test cases -> 5-Testing -> 6-Diseño final al que quiere llegar -> 7-Testing .... etc
 
 - Implemente en Smalltalk los requerimientos planteados, y todas aquellas modificaciones que considere necesarias (incluyendo el mantenimiento y extensión de los test cases).
 
 
 > Solucion Fran:
-  [Paquete Ejercicio 1](src/p7 francisco/)
+  [Paquete Ejercicio 1](src/p7 francisco/P7E1.st)
 
 
 
