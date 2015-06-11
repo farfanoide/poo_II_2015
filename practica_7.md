@@ -77,11 +77,14 @@ TweetBase>>calculateTweetsPerUser
 			result at: user ifAbsentPut: 0.
 			result at: user put: (result at: user) + 1 ].
 	^result.
+
+
 	
 TweetBase>>calculateMean: aResult
   "calculates the mean"
 	
 	^(aResult inject: 0 into: [:total :a | total + a ] ) / aResult size. 	
+
 
 
 TweetBase>>varianceCalculationWith: aMean and: aResult
@@ -92,6 +95,7 @@ TweetBase>>varianceCalculationWith: aMean and: aResult
 	aResult associationsDo: [ :assoc | total := total + ((assoc value - aMean) * (assoc value - aMean)) ].
 	
 	^ total / (aResult size)
+
 
 
 TweetBase>>varianceTweetsPerUser
@@ -108,6 +112,7 @@ TweetBase>>varianceTweetsPerUser
 	
 	^self varianceCalculationWith: mean and: result
 	
+
 
 TweetBase>>deviationTweetsPerUser
   "returns the deviation of  tweets groups by user"
