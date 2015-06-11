@@ -16,7 +16,7 @@ la clase 1 de reuso y frameworks.
 2. Responda a las siguientes preguntas:
 
 
-a) Reuso
+#a) Reuso
 
   1) Cuáles son los diferentes tipos de reúso citados en la bibliografía de referencia y revisados en las clases teóricas?
 
@@ -31,7 +31,7 @@ resolver.
 
 
 
-b) Frameworks
+#b) Frameworks
 
 
   1) Cuando utilizamos frameworks orientados a objetos: qué estamos reusando? De qué manera atacan
