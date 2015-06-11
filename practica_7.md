@@ -126,4 +126,4 @@ TweetBase>>deviationTweetsPerUser
 
 
 > Solucion Fran:
-  [Paquete Ejercicio 2](src/p7 francisco/)
+  [Paquete Ejercicio 2](src/p7 francisco/P7E2.st)
