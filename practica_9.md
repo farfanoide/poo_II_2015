@@ -19,7 +19,7 @@ Revise el código de de SUnit y documente:
   
   - dónde se utiliza Template Methods en SUnit y su relación con los hotspots del framework.
   
-  -qué parte del framework necesita conocer en profundidad para poder utilizarlo. Hay alguna parte del SUnit
+  - qué parte del framework necesita conocer en profundidad para poder utilizarlo. Hay alguna parte del SUnit
 que no necesita conocer para poder utilizarlo?
 
 
