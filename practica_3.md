@@ -123,6 +123,10 @@ Tareas:
    
 
 
+> Solucion Fran:
+  [Paquete Ejercicio 2](src/p3 francisco/P3E2.st)
+
+
 
 Ejercicio 3: Calculadora
 ------------------------
