@@ -4,25 +4,15 @@ Orientación a Objetos 2 -Práctica 3
 Ejercicio 1: Adaptadores de recorrido
 -------------------------------------
 
-A diferencia del paradigma estructurado, en la programación orientada a objetos
-las estructuras como los árboles o los grafos no se suelen modelar
-explícitamente, sino que surgen como resultado de las relaciones de
-conocimiento entre objetos. A modo de ejemplo, tomemos el caso de un File
-System. En Pharo un File System es accedido por medio de la clase
-FileReference, que implementa el mensaje #children. Este mensaje retorna una
-colección con los nombres de archivos y subdirectorios del objeto receptor.
-Luego, a pesar de que un File System tiene una estructura de árbol, no es
-necesario modelar una clase "Arbol" ya que la estructura se deriva de las
-relaciones entre los objetos. En este ejercicio usted deberá implementar la
-clase TreeCollector. Un TreeCollector se utiliza para recorrer cualquier red
-de objetos que posea una estructura de árbol subyacente. Para esto un
-TreeCollector se instancia con el mensaje #block:aBlock y reconoce los
-mensajes: #preOrderCollect:aTree, #inOrder- Collect:aTree y
-#postOrderCollect:aTree. Cada uno de estos mensajes recorre la estructura de
-árbol (siguiendo los algoritmos correspondientes de pre-order, in-order y
-post-order) y al pasar por cada nodo evalúa el bloque con el nodo actual como
-parámetro. Cada mensaje retorna una colección, con el resultado de evaluar el
-bloque en cada nodo del árbol. Por ejemplo, el código para pre-order pueder
+A diferencia del paradigma estructurado, en la programación orientada a objetos las estructuras como los árboles o los grafos no se suelen modelar explícitamente, sino que surgen como resultado de las relaciones de conocimiento entre objetos.A modo de ejemplo, tomemos el caso de un FileSystem. 
+
+En Pharo un File System es accedido por medio de la clase
+FileReference, que implementa el mensaje ```#children```. Este mensaje retorna una colección con los nombres de archivos y subdirectorios del objeto receptor.
+Luego, a pesar de que un File System tiene una estructura de árbol, no es necesario modelar una clase "Arbol" ya que la estructura se deriva de las relaciones entre los objetos. En este ejercicio usted deberá implementar la
+clase TreeCollector. 
+
+Un TreeCollector se utiliza para recorrer cualquier red de objetos que posea una estructura de árbol subyacente. Para esto un TreeCollector se instancia con el mensaje ```#block:aBlock``` y reconoce los mensajes: ```#preOrderCollect:aTree```, ```#inOrderCollect:aTree``` y ```#postOrderCollect:aTree```. 
+Cada uno de estos mensajes recorre la estructura de árbol (siguiendo los algoritmos correspondientes de pre-order, in-order y post-order) y al pasar por cada nodo evalúa el bloque con el nodo actual como parámetro. Cada mensaje retorna una colección, con el resultado de evaluar el bloque en cada nodo del árbol. Por ejemplo, el código para pre-order pueder
 algo similar a:
 
 ```smalltalk
@@ -47,11 +37,8 @@ TreeCollector>> preOrderCollect:aTree with:result
 
    2. Implemente la clase TreeCollector.
 
-   3. Aplique el pattern Adapter para poder utilizar un TreeCollector sobre el
-   árbol que representa la jerarquía de clases de Smalltalk, empezando por
-   Object. Para obtener las subclases de una clase, se le envía el mensaje
-   #subclasses. Por ejemplo, Collection subclasses retorna las subclases
-   directas de la clase Collection.
+   3. Aplique el pattern Adapter para poder utilizar un TreeCollector sobre el árbol que representa la jerarquía de clases de Smalltalk, empezando por Object. Para obtener las subclases de una clase, se le envía el mensaje
+   ```#subclasses```. Por ejemplo, Collection subclasses retorna las subclases directas de la clase Collection.
 
    4. Aplique el pattern adapter para poder utilizar un TreeCollector sobre la
    estructura de directorios a partir de c:/temp.
@@ -139,23 +126,22 @@ Ejercicio 3: Calculadora
 
 Sea la clase Calculadora con los siguientes mensajes:
 
-#resultadoParaMostrar 
+```#resultadoParaMostrar ```
 que retorna el valor acumulado en la operación actual de la calculadora en forma de String (los números entienden el mensaje printString).
 
-#borrar 
+```#borrar ```
 vuelve a cero el valor acumulado.
 
-#valor: unValor
+```#valor: unValor```
 asigna el valor acumulado.
 
-#mas provoca que la calculadora espere un nuevo valor. Si a continuación se le envía el mensaje #valor: la
+```#mas``` provoca que la calculadora espere un nuevo valor. Si a continuación se le envía el mensaje #valor: la
 calculadora sumará el valor recibido como parámetro al valor actual acumulado y guardará el resultado en esta
 última.
 
 Si la calculadora está esperando un valor y se le envía cualquier otro mensaje, entonces pasará a un estado de error.
-Sólo saldrá de ahí si se le envía el mensaje #borrar. Los mensajes #menos, #dividido y #por actúan de manera
-similar al mensaje #mas.
-Cuando la calculadora está en estado de error, el mensaje #resultadoParaMostrar retorna el string Error. La
+Sólo saldrá de ahí si se le envía el mensaje ```#borrar```. Los mensajes ```#menos```, ```#dividido``` y ```#por``` actúan de manera similar al mensaje ```#mas```.
+Cuando la calculadora está en estado de error, el mensaje ```#resultadoParaMostrar``` retorna el string Error. La
 calculadora también entra en este estado si se intenta dividir por cero.
 
 Tareas:
