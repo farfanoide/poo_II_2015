@@ -120,9 +120,13 @@ Tareas:
    2. Diseñe la solución para proveer la funcionalidad descripta.
    3. Diseñe casos de prueba.
    4. Implemente la clase VendingMachine y los casos de prueba
+   
+
+
 
 Ejercicio 3: Calculadora
 ------------------------
+
 
 Sea la clase Calculadora con los siguientes mensajes:
 
@@ -155,7 +159,12 @@ Tareas:
        para efectuar una suma.
    4. Implemente en Smalltalk completamente
 
+
+
+
 Ejercicio 4: Patrón State
+-------------------------------------
+
 
 Lea el capítulo del patrón State en el libro Design Patterns y responda:
 
@@ -164,7 +173,12 @@ Lea el capítulo del patrón State en el libro Design Patterns y responda:
    3. ¿Puede el estado concreto acceder al contexto?
    4. ¿Quién define las transiciones entre estados?
 
+
+
+
 Ejercicio 5: Lea el pattern Template Method y ...
+-------------------------------------
+
 
 (Puede leer el patrón desde el archivo templateMethod.pdf) .
 
@@ -186,7 +200,12 @@ Ejercicio 5: Lea el pattern Template Method y ...
               Al menos 2 clases concretas.
               Los hook methods.
 
+
+
+
 Ejercicio 6: Template hasta en la sopa (o el café)
+-------------------------------------
+
 
 Mucha gente no puede vivir sin su café o su té matinal, ni hablar del chocolatada de la tarde. El proceso de pre-
 paración de cada uno es:
@@ -203,7 +222,11 @@ paración de cada uno es:
 
        3 clases definidas anteriormente y factorice en la clase abstracta todo el código que le sea posible.
 
+
+
+
 Ejercicio 7: Fábrica de vehículos
+-------------------------------------
 
 Independientemente de si el vehículo va por aire, agua o tierra, posee básicamente la misma línea de construcción.
 
