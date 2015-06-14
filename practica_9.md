@@ -6,8 +6,7 @@ Orientación a Objetos 2 -Práctica 9
 Ejercicio 1: SUnit
 -------------------------------------
 
-En los prácticos anteriores hemos estado utilizando el framework SUnit para desarrollar aplicaciones que nos permi-
-tan testear la funcionalidad de nuestro código. Para realizar este ejercicio puede leer el artículo escrito por S.Ducasse
+En los prácticos anteriores hemos estado utilizando el framework SUnit para desarrollar aplicaciones que nos permitan testear la funcionalidad de nuestro código. Para realizar este ejercicio puede leer el artículo escrito por S.Ducasse
 que se adjunta como material adicional y repasar el código de SUnit.
 
 Revise el código de de SUnit y documente:
