@@ -46,10 +46,7 @@ Este framework abstrae la funcionalidad para “monitorear el contenido del clip
 siguientes clases: ```ClipboardMonitor``` (clase abstracta que modela el monitoreo del contenido del clipboard y
 lo consume) y ```TranscriptLoggingClipboardMonitor``` (subclase de la anterior que imprime el contenido
 del clipboard al Transcript). Lea detenidamente los comentarios de ambas clases.
-El objetivo de este ejercicio es utilizar este framework para construir la aplicación que imprima en el Trans-
-cript solamente cuando el contenido del clipboard cambia (```ChangeLoggingClipboardMonitor ```). Utilice
-los criterios de instanciación de frameworks de caja blanca vistos en la teoría y extienda la funcionalidad pro-
-vista para escribir una nueva línea en el Transcript sólo cuando el contenido haya cambiado y almacene cada
+El objetivo de este ejercicio es utilizar este framework para construir la aplicación que imprima en el Transcript solamente cuando el contenido del clipboard cambia (```ChangeLoggingClipboardMonitor ```). Utilice los criterios de instanciación de frameworks de caja blanca vistos en la teoría y extienda la funcionalidad provista para escribir una nueva línea en el Transcript sólo cuando el contenido haya cambiado y almacene cada
 contenido nuevo como elemento de una colección.
 
 Tareas:
