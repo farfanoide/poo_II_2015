@@ -15,8 +15,7 @@ Revise el código de de SUnit y documente:
   - los hotspots y los frozenspots
     
     > Los hotspots que encontramos son: setUp y tearDown que no estan definidos en la clase.
-      
-    Los frozenspots son: son los metodos implementados en el mismo framework.
+    > Los frozenspots son: son los metodos implementados en el mismo framework.
   
   - dónde se produce la inversión de control
   
