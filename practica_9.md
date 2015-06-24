@@ -19,7 +19,7 @@ Revise el código de de SUnit y documente:
   
   - dónde se produce la inversión de control
   
-    > La inversion de control se produce en los hotposts.
+    > La inversion de control se produce en los hotposts, cuando el framework invoca nuestro código.
   
   - dónde se utiliza Template Methods en SUnit y su relación con los hotspots del framework.
   
