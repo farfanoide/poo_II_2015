@@ -16,7 +16,7 @@ Revise el código de de SUnit y documente:
     
     > Los hotspots que encontramos son: setUp y tearDown que no estan definidos en la clase.
     
-    > Los frozenspots son: son los metodos implementados en el mismo framework como por ejemplo ´´´#cleanUpInstanceVariables´´´.
+    > Los frozenspots son: son los metodos implementados en el mismo framework como por ejemplo #cleanUpInstanceVariables.
   
   - dónde se produce la inversión de control
   
@@ -24,10 +24,14 @@ Revise el código de de SUnit y documente:
   
   - dónde se utiliza Template Methods en SUnit y su relación con los hotspots del framework.
     
-    > El Template Methods en SUnit se utiliza en el metodo ´´´#runCase´´´.  La relación con los hotsposts
+    > El Template Methods en SUnit se utiliza en el metodo #runCase.  La relación con los hotsposts es que los invoca provocando la inversion de control.
 
   - qué parte del framework necesita conocer en profundidad para poder utilizarlo. Hay alguna parte del SUnit
 que no necesita conocer para poder utilizarlo?
+
+  > La parte del framework que se necesita conocer en profundidad para poder utilizarlo es, los metodos de la clase TestAsserter, que estan agrupados por el protocolo asserting.
+  
+  >Las partes que no son necesarias conocer en el framework son los metodos privados de SUnit o que no son hotspots.
 
 
 
