@@ -20,10 +20,33 @@ implemente en papel y conteste:
 
 
       a)¿Mediante qué mensaje un objeto declara que es dependiente de otro?
+      
+        > anObjeto addDependent: self
+
+        > anObjeto es el objeto que se quiere depender, y self es el dependiente que por lo general se manda el     mismo debido a que el mensaje que agrega dependientes se lo suele implementar en la clase del objeto dependiente. 
     
       b)¿Con qué mensaje un objeto indica que ya no es dependiente de otro?
+      
+        > anObjeto removeDependent: self
+
+        > anObjeto es el objeto del cual se depende, y self es el que no quiere depender más, que por lo general se manda el mismo debido a que el mensaje que elimina dependientes se lo suele implementar en la clase del objeto dependiente. 
     
       c)¿Qué mensaje debe implementar para que un objeto actúe ante una notificación?
+      
+        > Luego de cambiar de estado el objeto del cual se depende debe indicarle a sus dependientes que ha   cambiado con:
+
+        > self changed: anAspectSymbol
+        > o
+        > self changed: anAspectSymbol with: aParameter
+
+        > anAspectSymbol es el aspecto que cambió (va con # al principio) y en el caso que se quiera pasar algún parámetro (como por ejemplo el valor que cambió) se utiliza el changed:with:.
+Lo que hace el changed es avisarle a todos sus dependientes que un aspecto del objeto cambió. Los dependientes se actualizan con este cambio con el mensaje:
+
+        > update: anAspectSymbol
+        > o
+        > update: anAspectSymbol with: aParameter
+
+        > Por lo tanto en este método se debe preguntar si el aspecto es el que nos interesa (debido a que se puede depender de varios aspectos) para realizar la actualización.
     
       d)¿En qué clases encuentra implementaciones de dichos mensajes? ¿En que difieren dichas implementaciones?
   
