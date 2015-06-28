@@ -4,25 +4,15 @@ Orientación a Objetos 2 -Práctica 3
 Ejercicio 1: Adaptadores de recorrido
 -------------------------------------
 
-A diferencia del paradigma estructurado, en la programación orientada a objetos
-las estructuras como los árboles o los grafos no se suelen modelar
-explícitamente, sino que surgen como resultado de las relaciones de
-conocimiento entre objetos. A modo de ejemplo, tomemos el caso de un File
-System. En Pharo un File System es accedido por medio de la clase
-FileReference, que implementa el mensaje #children. Este mensaje retorna una
-colección con los nombres de archivos y subdirectorios del objeto receptor.
-Luego, a pesar de que un File System tiene una estructura de árbol, no es
-necesario modelar una clase "Arbol" ya que la estructura se deriva de las
-relaciones entre los objetos. En este ejercicio usted deberá implementar la
-clase TreeCollector. Un TreeCollector se utiliza para recorrer cualquier red
-de objetos que posea una estructura de árbol subyacente. Para esto un
-TreeCollector se instancia con el mensaje #block:aBlock y reconoce los
-mensajes: #preOrderCollect:aTree, #inOrder- Collect:aTree y
-#postOrderCollect:aTree. Cada uno de estos mensajes recorre la estructura de
-árbol (siguiendo los algoritmos correspondientes de pre-order, in-order y
-post-order) y al pasar por cada nodo evalúa el bloque con el nodo actual como
-parámetro. Cada mensaje retorna una colección, con el resultado de evaluar el
-bloque en cada nodo del árbol. Por ejemplo, el código para pre-order pueder
+A diferencia del paradigma estructurado, en la programación orientada a objetos las estructuras como los árboles o los grafos no se suelen modelar explícitamente, sino que surgen como resultado de las relaciones de conocimiento entre objetos.A modo de ejemplo, tomemos el caso de un FileSystem. 
+
+En Pharo un File System es accedido por medio de la clase
+FileReference, que implementa el mensaje ```#children```. Este mensaje retorna una colección con los nombres de archivos y subdirectorios del objeto receptor.
+Luego, a pesar de que un File System tiene una estructura de árbol, no es necesario modelar una clase "Arbol" ya que la estructura se deriva de las relaciones entre los objetos. En este ejercicio usted deberá implementar la
+clase TreeCollector. 
+
+Un TreeCollector se utiliza para recorrer cualquier red de objetos que posea una estructura de árbol subyacente. Para esto un TreeCollector se instancia con el mensaje ```#block:aBlock``` y reconoce los mensajes: ```#preOrderCollect:aTree```, ```#inOrderCollect:aTree``` y ```#postOrderCollect:aTree```. 
+Cada uno de estos mensajes recorre la estructura de árbol (siguiendo los algoritmos correspondientes de pre-order, in-order y post-order) y al pasar por cada nodo evalúa el bloque con el nodo actual como parámetro. Cada mensaje retorna una colección, con el resultado de evaluar el bloque en cada nodo del árbol. Por ejemplo, el código para pre-order pueder
 algo similar a:
 
 ```smalltalk
@@ -47,11 +37,8 @@ TreeCollector>> preOrderCollect:aTree with:result
 
    2. Implemente la clase TreeCollector.
 
-   3. Aplique el pattern Adapter para poder utilizar un TreeCollector sobre el
-   árbol que representa la jerarquía de clases de Smalltalk, empezando por
-   Object. Para obtener las subclases de una clase, se le envía el mensaje
-   #subclasses. Por ejemplo, Collection subclasses retorna las subclases
-   directas de la clase Collection.
+   3. Aplique el pattern Adapter para poder utilizar un TreeCollector sobre el árbol que representa la jerarquía de clases de Smalltalk, empezando por Object. Para obtener las subclases de una clase, se le envía el mensaje
+   ```#subclasses```. Por ejemplo, Collection subclasses retorna las subclases directas de la clase Collection.
 
    4. Aplique el pattern adapter para poder utilizar un TreeCollector sobre la
    estructura de directorios a partir de c:/temp.
@@ -133,29 +120,36 @@ Tareas:
    2. Diseñe la solución para proveer la funcionalidad descripta.
    3. Diseñe casos de prueba.
    4. Implemente la clase VendingMachine y los casos de prueba
+   
+
+
+> Solucion Fran:
+  [Paquete Ejercicio 2](src/p3 francisco/P3E2.st)
+
+
 
 Ejercicio 3: Calculadora
 ------------------------
 
+
 Sea la clase Calculadora con los siguientes mensajes:
 
-#resultadoParaMostrar 
+```#resultadoParaMostrar ```
 que retorna el valor acumulado en la operación actual de la calculadora en forma de String (los números entienden el mensaje printString).
 
-#borrar 
+```#borrar ```
 vuelve a cero el valor acumulado.
 
-#valor: unValor
+```#valor: unValor```
 asigna el valor acumulado.
 
-#mas provoca que la calculadora espere un nuevo valor. Si a continuación se le envía el mensaje #valor: la
+```#mas``` provoca que la calculadora espere un nuevo valor. Si a continuación se le envía el mensaje #valor: la
 calculadora sumará el valor recibido como parámetro al valor actual acumulado y guardará el resultado en esta
 última.
 
 Si la calculadora está esperando un valor y se le envía cualquier otro mensaje, entonces pasará a un estado de error.
-Sólo saldrá de ahí si se le envía el mensaje #borrar. Los mensajes #menos, #dividido y #por actúan de manera
-similar al mensaje #mas.
-Cuando la calculadora está en estado de error, el mensaje #resultadoParaMostrar retorna el string Error. La
+Sólo saldrá de ahí si se le envía el mensaje ```#borrar```. Los mensajes ```#menos```, ```#dividido``` y ```#por``` actúan de manera similar al mensaje ```#mas```.
+Cuando la calculadora está en estado de error, el mensaje ```#resultadoParaMostrar``` retorna el string Error. La
 calculadora también entra en este estado si se intenta dividir por cero.
 
 Tareas:
@@ -169,7 +163,12 @@ Tareas:
        para efectuar una suma.
    4. Implemente en Smalltalk completamente
 
+
+
+
 Ejercicio 4: Patrón State
+-------------------------------------
+
 
 Lea el capítulo del patrón State en el libro Design Patterns y responda:
 
@@ -178,7 +177,12 @@ Lea el capítulo del patrón State en el libro Design Patterns y responda:
    3. ¿Puede el estado concreto acceder al contexto?
    4. ¿Quién define las transiciones entre estados?
 
+
+
+
 Ejercicio 5: Lea el pattern Template Method y ...
+-------------------------------------
+
 
 (Puede leer el patrón desde el archivo templateMethod.pdf) .
 
@@ -200,7 +204,12 @@ Ejercicio 5: Lea el pattern Template Method y ...
               Al menos 2 clases concretas.
               Los hook methods.
 
+
+
+
 Ejercicio 6: Template hasta en la sopa (o el café)
+-------------------------------------
+
 
 Mucha gente no puede vivir sin su café o su té matinal, ni hablar del chocolatada de la tarde. El proceso de pre-
 paración de cada uno es:
@@ -217,7 +226,11 @@ paración de cada uno es:
 
        3 clases definidas anteriormente y factorice en la clase abstracta todo el código que le sea posible.
 
+
+
+
 Ejercicio 7: Fábrica de vehículos
+-------------------------------------
 
 Independientemente de si el vehículo va por aire, agua o tierra, posee básicamente la misma línea de construcción.
 
