@@ -57,6 +57,8 @@ una Computadora: temperatura de la CPU, velocidad de los coolers, espacio dispon
 Para realizar la medición de los valores, cada componente actualiza de forma automática una instancia de la clase
 ```Computadora``` donde existen diferentes variables de instancia con sus correspondientes accessors para cada uno de los parametros medidos. Por otro lado, para la visualización de los datos se dispone de un conjunto de Widgets que se describen a continuación:
 
+![ejercicio2](img/p11/ejer2.png)
+
 Estas clases no pueden ser modificadas ya que pertenecen a una libreria que no es mantenida por usted.
 En base a lo mencionando anteriormente, para el monitoreo se requiere diseñar el concepto de ```Tablero``` responsable de coordinar la sincronización de las actualizaciones que subre la instancia de la computadora con los Widgets.
 
