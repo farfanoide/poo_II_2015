@@ -48,6 +48,7 @@ Lo que hace el changed es avisarle a todos sus dependientes que un aspecto del o
     
       d)¿En qué clases encuentra implementaciones de dichos mensajes? ¿En que difieren dichas implementaciones?
   
+      > Los mensajes están todos implementados de manera default en la clase Object. El changed no es necesario reimplementarlo, pero el update si hay que redefinirlo en la clase dependiente para decirle qué debe realizar con el aviso de cambio que recibió del objeto del cual depende.
     
   2. Realice el diagrama de clases UML de la aplicación tal como se obtiene del repositorio.
   
