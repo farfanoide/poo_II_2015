@@ -31,7 +31,7 @@ que no necesita conocer para poder utilizarlo?
 
   > La parte del framework que se necesita conocer en profundidad para poder utilizarlo es, los metodos de la clase TestAsserter, que estan agrupados por el protocolo asserting.
   
-  >Las partes que no son necesarias conocer en el framework son los metodos privados de SUnit o que no son hotspots.
+  > Las partes que no son necesarias conocer en el framework son los metodos privados de SUnit o que no son hotspots.
 
 
 
