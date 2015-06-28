@@ -24,7 +24,7 @@ Ejercicio 1: Lea la bibliografía y responda
   2) Cuando aplicamos patrones de diseño: qué estamos reusando? De qué manera los patrones de diseño atacan las dificultades del reúso? Encuentre al menos dos ejemplos en los trabajos prácticos realizados
 hasta ahora.
 
-   > Se reusan aplicaciones completas (se adaptan o reusan por completo), componentes (se invocan), diseños o estrategias de diseño (se impletan o imitan), conceptos o ideas funcionales.
+   > Estamos reutilizando una idea, un diseño de solución lo suficientemente abstracto para ser aplicado en diferentes contextos.
 
   3) Cuando utilizamos librerías de clases: qué estamos reusando? Describa dos ejemplos de los trabajos
 prácticos anteriores en los que utilizó librerías de clases indicando qué dificultades de reúso pudo
