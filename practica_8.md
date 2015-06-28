@@ -40,22 +40,26 @@ los frameworks las dificultades de reúso?
 
    > Reusamos clases concretas o abstractas. Los frameworks tiene diseñados e implementados objetos para hacer clases reusables, de tal manera que sirve para cualquier aplicación futura que utilice el frameworks.
 
-  2) De acuerdo con el tipo de problema que atacan, cómo se clasifican los frameworks? De ejemplo de
-cada categoría.
-.
-   > - Infraestructura: 
-		   . Ataca problemas generales de desarrollo de software, generalmente no captados por el usuario de la aplicacion (resuelven problemas de los programadores no de los usuarios).
-		   . Se enfica en interfaces de usuario (desktop, web , moviles), seguridad, contenedores de app, etc.
-		   . Proveen infraestructura portable y eficiente sobre la cual construir una gran variedad de app.
-	   - Integración: Se utilizan para integrar componentes de aplicación distribuidos. Se diseñan para aumentar la capacidad de los desarrolladores de reusar, modularizar, y extender su infraestructura de software.
-	   - Enterprice...
+  2) De acuerdo con el tipo de problema que atacan, cómo se clasifican los frameworks? De ejemplo de cada categoría.
+
+	> - Infraestructura: 
+	. Ataca problemas generales de desarrollo de software, generalmente no captados por el usuario de la aplicacion (resuelven problemas de los programadores no de los usuarios).
+	. Se enfica en interfaces de usuario (desktop, web , moviles), seguridad, contenedores de app, etc.
+	. Proveen infraestructura portable y eficiente sobre la cual construir una gran variedad de app.
+	
+	> - Integración: Se utilizan para integrar componentes de aplicación distribuidos. Se diseñan para aumentar la capacidad de los desarrolladores de reusar, modularizar, y extender su infraestructura de software.
+	   
+	> - Enterprice...
 
   3) A que nos referimos con los términos hot spot y frozen spot?
     
-   > Hostpost: Son la parte del framework donde acurre la adaptación, es decir, es donde nosotros escribimos nuestro código para transformar un framework en una aplicación.
-		whitebox (caja blanca): Si ocurre por clasificacion.
-		blackbox (caja negra): si ocuure por composicion.
-	  Frozenpost: Son partes del framework que no cambian, se mantienen igual para todos las aplicaciones que lo usan
+   	> Hostpost: Son la parte del framework donde acurre la adaptación, es decir, es donde nosotros escribimos nuestro código para transformar un framework en una aplicación.
+   
+	> whitebox (caja blanca): Si ocurre por clasificacion.
+	
+	> blackbox (caja negra): si ocuure por composicion.
+	
+	> Frozenpost: Son partes del framework que no cambian, se mantienen igual para todos las aplicaciones que lo usan
   
   4) A qué nos referimos con instanciar un framework ? Qué sería instanciar un hostpot?
   
@@ -64,6 +68,8 @@ cada categoría.
   5) En qué se diferencia un framework blackbox de uno whitebox? Un framework, cae exclusivamente en
 una de esas categorías? De ejemplos
 
-   > Los whitebox proveen extensibilidad dependiendo de las caracteristicas OO como la herencia y el binding dinámico. (herencia y redefiniar metodos gancho, hock). En este caso los programadores deben conocer la estructura interna del framework
-		Los blackbox soportan la extensibilidad vía la deficinicion de interfaces para componentes que pueden ser añadidos al framework por composicion de objetos.(definiendo componentes que cumplen con una interface determinada y luego integrandolos al framework.). Los blackbox usan delegacion y composicion en lugar de herencia, se requiere estudiar librerias de componentes y sus configuraciones.
-		Los black box son mas faciles de usar pero mas dificiles de desarrollar, y por lo general menos flexibles.
+   	> Los whitebox proveen extensibilidad dependiendo de las caracteristicas OO como la herencia y el binding dinámico. (herencia y redefiniar metodos gancho, hock). En este caso los programadores deben conocer la estructura interna del framework
+
+	> Los blackbox soportan la extensibilidad vía la deficinicion de interfaces para componentes que pueden ser añadidos al framework por composicion de objetos.(definiendo componentes que cumplen con una interface determinada y luego integrandolos al framework.). Los blackbox usan delegacion y composicion en lugar de herencia, se requiere estudiar librerias de componentes y sus configuraciones.
+
+	> Los black box son mas faciles de usar pero mas dificiles de desarrollar, y por lo general menos flexibles.
