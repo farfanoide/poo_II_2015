@@ -43,7 +43,8 @@ los frameworks las dificultades de reúso?
   2) De acuerdo con el tipo de problema que atacan, cómo se clasifican los frameworks? De ejemplo de cada categoría.
 
 > - Infraestructura: 
-	. Ataca problemas generales de desarrollo de software, generalmente no captados por el usuario de la aplicacion (resuelven problemas de los programadores no de los usuarios).
+
+>	. Ataca problemas generales de desarrollo de software, generalmente no captados por el usuario de la aplicacion (resuelven problemas de los programadores no de los usuarios).
 	
 >	. Se enfica en interfaces de usuario (desktop, web , moviles), seguridad, contenedores de app, etc.
 	
